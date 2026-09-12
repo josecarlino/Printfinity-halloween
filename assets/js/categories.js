@@ -58,6 +58,7 @@ window.CATALOG_CATEGORIES = [
     pageDescription: "Explora los modelos 3D de muñecos y figuras de nuestro catálogo Halloween.",
     image: "assets/img/figuras.jpg",
     imageAlt: "Figura articulada impresa en 3D esqueleto estilizado con detalles naranja",
+    imageFit: "contain",
     embedUrl: null,
     canvaLink: null,
     author: null
