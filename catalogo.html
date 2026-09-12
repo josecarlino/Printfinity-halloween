@@ -97,11 +97,17 @@
     document.getElementById("cat-title-accent").textContent = current.name;
     document.getElementById("cat-description").textContent = current.pageDescription;
 
+    // Contenedor 16:9 compartido por el embed real y el estado "próximamente",
+    // así la altura no salta al cambiar de categoría.
     const embedWrapper = document.getElementById("embed-wrapper");
     if (current.embedUrl) {
       embedWrapper.innerHTML =
-        '<div style="position: relative; width: 100%; height: 0; padding-top: 56.2500%; padding-bottom: 0; box-shadow: 0 2px 8px 0 rgba(0,0,0,0.5); margin: 0; overflow: hidden; border-radius: 0.75rem; border: 1px solid #26262A; will-change: transform;">' +
-          '<iframe loading="lazy" style="position: absolute; width: 100%; height: 100%; top: 0; left: 0; border: none; padding: 0; margin: 0;" ' +
+        '<div class="relative w-full rounded-xl border border-border-subtle overflow-hidden shadow-2xl bg-surface-card" style="padding-top:56.25%;">' +
+          '<div id="embed-skeleton" class="absolute inset-0 z-10 flex flex-col items-center justify-center gap-space-xs bg-surface-card text-text-muted select-none transition-opacity duration-300">' +
+            '<span class="material-symbols-outlined text-[32px] text-pumpkin-vibrant animate-spin">progress_activity</span>' +
+            '<span class="font-label-md text-text-muted">Cargando catálogo…</span>' +
+          '</div>' +
+          '<iframe id="embed-iframe" loading="lazy" class="absolute inset-0 w-full h-full border-0" ' +
             'src="' + current.embedUrl + '" allowfullscreen="allowfullscreen" allow="fullscreen"></iframe>' +
         '</div>' +
         (current.canvaLink
@@ -111,10 +117,17 @@
               ' en Canva' +
             '</p>'
           : '');
+
+      const skeleton = document.getElementById("embed-skeleton");
+      const iframe = document.getElementById("embed-iframe");
+      iframe.addEventListener("load", function () {
+        skeleton.style.opacity = "0";
+        setTimeout(function () { skeleton.style.display = "none"; }, 300);
+      });
     } else {
       embedWrapper.innerHTML =
-        '<div class="w-full aspect-[16/9] min-h-[460px] sm:min-h-[540px] lg:min-h-[620px] bg-surface-card border border-border-subtle rounded-xl flex flex-col items-center justify-center text-center p-space-md shadow-2xl relative overflow-hidden">' +
-          '<div class="flex flex-col items-center gap-space-xs text-text-muted select-none">' +
+        '<div class="relative w-full rounded-xl border border-border-subtle overflow-hidden shadow-2xl bg-surface-card" style="padding-top:56.25%;">' +
+          '<div class="absolute inset-0 flex flex-col items-center justify-center gap-space-xs text-center p-space-md text-text-muted select-none">' +
             '<span class="material-symbols-outlined text-[36px] text-text-muted/60">hourglass_top</span>' +
             '<span class="font-label-md text-text-muted">Este catálogo estará disponible próximamente</span>' +
             '<span class="font-body-sm text-text-muted/60 text-xs">Vuelve pronto para ver las piezas de ' + current.name.toLowerCase() + '.</span>' +
