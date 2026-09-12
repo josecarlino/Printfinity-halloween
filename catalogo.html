@@ -49,18 +49,17 @@
 <main class="w-full pt-16 bg-canvas-base flex-1">
   <div class="w-full max-w-6xl mx-auto px-4 md:px-8 py-8 flex flex-col gap-8">
 
-    <div class="w-full flex flex-col gap-space-sm">
-      <nav aria-label="Breadcrumb" class="flex items-center gap-space-2xs font-label-sm text-label-sm">
-        <a class="text-text-secondary hover:text-pumpkin-vibrant transition-colors no-underline" href="index.html">Inicio</a>
-        <span class="text-text-muted">/</span>
-        <span id="breadcrumb-current" class="text-text-primary font-medium">...</span>
-      </nav>
+    <div class="w-full flex flex-col md:flex-row md:items-end justify-between gap-space-md">
       <div class="flex flex-col gap-1">
         <h1 id="cat-title" class="font-headline-lg text-headline-lg font-bold text-text-primary tracking-tight">
           Catálogo de <span id="cat-title-accent" class="text-pumpkin-vibrant">...</span>
         </h1>
         <p id="cat-description" class="font-body-md text-text-secondary max-w-2xl"></p>
       </div>
+      <a class="inline-flex items-center gap-space-2xs text-text-secondary hover:text-pumpkin-vibrant font-label-md transition-colors group no-underline self-start md:self-end pb-1 whitespace-nowrap" href="index.html">
+        <span class="material-symbols-outlined text-[20px] transition-transform group-hover:-translate-x-1">arrow_back</span>
+        <span>Página principal</span>
+      </a>
     </div>
 
     <div class="w-full flex flex-col items-center">
@@ -130,7 +129,6 @@
     document.title = "Catálogo de " + current.name + " · Printfinity";
     document.getElementById("cat-title-accent").textContent = current.name;
     document.getElementById("cat-description").textContent = current.pageDescription;
-    document.getElementById("breadcrumb-current").textContent = current.name;
 
     const waNumber = ((window.SITE_CONFIG || {}).whatsappNumber || "").replace(/\D/g, "");
     const waMessage = 'Hola, quiero cotizar un modelo de la categoría "' + current.name + '". Número de modelo: ';
