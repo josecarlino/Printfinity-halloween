@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Printfinity · Catálogo de Impresión 3D Halloween</title>
+<meta name="description" content="Catálogo interactivo de impresiones 3D temáticas de Halloween: fantasmas, calabazas, letreros, figuras, adornos y souvenirs.">
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+<style>
+  html,body{margin:0;padding:0;}
+  body{overscroll-behavior:none;}
+  main>:first-child{margin-top:0!important;}
+  main>:last-child{margin-bottom:0!important;}
+  .material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;font-size:24px;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;}
+</style>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="assets/js/tailwind-config.js"></script>
+</head>
+<body class="bg-canvas-base font-body-md text-text-primary min-h-screen flex flex-col antialiased selection:bg-pumpkin-vibrant selection:text-canvas-base">
+
+<header class="fixed top-0 left-0 right-0 z-50 bg-canvas-base/95 backdrop-blur-md border-b border-border-subtle">
+  <div class="h-16 max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop flex items-center justify-between">
+    <a class="flex items-center gap-space-sm group text-inherit no-underline" href="index.html">
+      <div class="w-7 h-7 rounded-lg bg-surface-card border border-border-subtle flex items-center justify-center transition-colors group-hover:border-pumpkin-vibrant/60">
+        <span class="w-2 h-2 rounded-full bg-text-primary group-hover:bg-pumpkin-vibrant transition-colors"></span>
+      </div>
+      <span class="font-headline-sm text-headline-sm font-bold tracking-tight text-text-primary">Printfinity</span>
+    </a>
+  </div>
+</header>
+
+<main class="w-full pt-16 bg-canvas-base flex-1">
+  <div class="flex flex-col w-full">
+    <div class="relative w-full overflow-hidden">
+      <div class="absolute top-[-140px] left-1/2 -translate-x-1/2 w-[700px] h-[360px] bg-pumpkin-vibrant/10 blur-[130px] rounded-full pointer-events-none -z-10"></div>
+      <div class="absolute top-[280px] -right-[100px] w-[420px] h-[320px] bg-violet-accent/5 blur-[120px] rounded-full pointer-events-none -z-10"></div>
+
+      <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-space-xl md:py-space-3xl flex flex-col gap-space-2xl md:gap-space-3xl">
+
+        <section class="flex flex-col items-start max-w-3xl gap-space-md">
+          <div class="flex flex-col gap-space-2xs">
+            <h1 class="font-display text-display tracking-tight text-text-primary">
+              Catálogo de Impresión 3D
+              <div><span class="text-pumpkin-vibrant drop-shadow-[0_0_18px_rgba(255,122,0,0.25)]">Halloween 2026</span></div>
+            </h1>
+            <p class="font-body-lg text-body-lg text-text-secondary max-w-2xl mt-space-xs">
+              Explora nuestros catálogos interactivos por categoría o selecciona una pieza para iniciar su fabricación personalizada con parámetros de precisión industrial.
+            </p>
+          </div>
+        </section>
+
+        <section class="flex flex-col gap-space-lg">
+          <div class="flex items-end justify-between border-b border-border-subtle pb-space-sm">
+            <div class="flex flex-col">
+              <h2 class="font-headline-md text-headline-md text-text-primary">Categorías</h2>
+            </div>
+            <div class="hidden sm:flex items-center gap-space-xs font-label-sm text-label-sm text-text-secondary">
+              <span class="w-2 h-2 rounded-full bg-pumpkin-vibrant animate-pulse"></span>
+              <span id="category-count">7 Catálogos</span>
+            </div>
+          </div>
+
+          <div id="category-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+            <!-- Las tarjetas de categoría se generan dinámicamente desde assets/js/categories.js -->
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </div>
+</main>
+
+<footer class="w-full bg-surface-card border-t border-border-subtle mt-auto">
+  <div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin-desktop py-space-2xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-space-xl border-b border-border-subtle pb-space-xl mb-space-xl">
+      <div class="flex flex-col gap-space-xs">
+        <div class="flex items-center gap-space-xs text-pumpkin-vibrant font-label-md text-label-md">
+          <span class="material-symbols-outlined text-[18px]">precision_manufacturing</span>
+          <span>Materiales</span>
+        </div>
+        <p class="font-body-md text-body-md text-text-secondary">
+          Los modelos son impresos con <span class="text-text-primary font-semibold">filamento PLA</span> de grado técnico y resina SLA de alta fidelidad superficial.
+        </p>
+      </div>
+      <div class="flex flex-col gap-space-xs">
+        <div class="flex items-center gap-space-xs text-violet-accent font-label-md text-label-md">
+          <span class="material-symbols-outlined text-[18px]">tune</span>
+          <span>Personalización</span>
+        </div>
+        <p class="font-body-md text-body-md text-text-secondary">
+          Los modelos en su mayoría son adaptables en tamaño y color según lo deseado. También se puede agregar nombres, marcas, etc.
+        </p>
+      </div>
+    </div>
+    <div class="flex flex-col sm:flex-row items-center justify-between gap-space-sm font-body-sm text-body-sm text-text-muted">
+      <div class="flex items-center gap-space-xs">
+        <span class="w-1.5 h-1.5 rounded-full bg-pumpkin-vibrant"></span>
+        <span>Printfinity • Impresiones 3D</span>
+      </div>
+      <p>© 2026 Printfinity. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/categories.js"></script>
+<script>
+  (function () {
+    const grid = document.getElementById("category-grid");
+    const categories = window.CATALOG_CATEGORIES || [];
+    document.getElementById("category-count").textContent = categories.length + " Catálogos";
+
+    grid.innerHTML = categories.map(function (cat) {
+      return (
+        '<article class="group relative flex flex-col bg-surface-card border border-border-subtle rounded-xl overflow-hidden transition-all duration-300 hover:border-pumpkin-vibrant/60 hover:shadow-[0_0_24px_rgba(255,122,0,0.12)]">' +
+          '<div class="relative w-full aspect-[4/3] bg-surface-subtle overflow-hidden">' +
+            '<img alt="' + cat.imageAlt + '" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" src="' + cat.image + '">' +
+            '<div class="absolute inset-0 bg-gradient-to-t from-surface-card via-surface-card/20 to-transparent"></div>' +
+          '</div>' +
+          '<div class="flex flex-col flex-1 p-space-md justify-between gap-space-md">' +
+            '<div class="flex flex-col gap-1">' +
+              '<div class="flex items-center justify-between">' +
+                '<h3 class="font-headline-sm text-headline-sm text-text-primary group-hover:text-pumpkin-vibrant transition-colors">' + cat.name + '</h3>' +
+              '</div>' +
+              '<p class="font-body-sm text-body-sm text-text-secondary line-clamp-2">' + cat.shortDescription + '</p>' +
+            '</div>' +
+            '<a class="inline-flex items-center justify-center w-full gap-space-xs py-2 px-space-md rounded-lg bg-surface-subtle hover:bg-pumpkin-vibrant text-text-primary hover:text-canvas-base border border-border-subtle hover:border-pumpkin-vibrant font-label-md text-label-md transition-all duration-200 shadow-sm group/btn" href="catalogo.html?cat=' + cat.slug + '">' +
+              '<span>Ver catálogo</span>' +
+              '<span class="material-symbols-outlined text-[18px] transition-transform group-hover/btn:translate-x-1">arrow_forward</span>' +
+            '</a>' +
+          '</div>' +
+        '</article>'
+      );
+    }).join("");
+  })();
+</script>
+</body>
+</html>
