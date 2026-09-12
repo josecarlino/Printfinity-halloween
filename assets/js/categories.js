@@ -14,7 +14,7 @@ window.CATALOG_CATEGORIES = [
     name: "Fantasmas",
     icon: "mode_night",
     shortDescription:
-      "Esculturas geométricas low-poly en blanco mate con microtextura difusa y filamento fotoluminiscente.",
+      "Fantasmas tan blancos que asustan... de tiernos que son.",
     pageDescription: "Explora los modelos 3D de fantasmas de nuestro catálogo Halloween.",
     image: "assets/img/fantasmas.jpg",
     imageAlt: "Esculturas de fantasmas low-poly impresas en 3D con luz tenue de fondo",
@@ -27,7 +27,7 @@ window.CATALOG_CATEGORIES = [
     name: "Calabazas",
     icon: "lightbulb",
     shortDescription:
-      "Lámparas y portavelas modulares con facetas cortadas al láser y núcleo térmico reforzado.",
+      "Calabazas con más personalidad que el elenco de una peli de terror.",
     pageDescription: "Explora los modelos 3D de calabazas de nuestro catálogo Halloween.",
     image: "assets/img/calabazas.jpg",
     imageAlt: "Lámpara jack-o-lantern moderna geométrica en capas de filamento negro y naranja",
@@ -41,7 +41,7 @@ window.CATALOG_CATEGORIES = [
     name: "Letreros",
     icon: "spellcheck",
     shortDescription:
-      "Placas tipográficas de sobremesa y murales con co-extrusión en negro grafito y acento naranja neón.",
+      "Para anunciar el terror con estilo (y buena ortografía).",
     pageDescription: "Explora los modelos 3D de letreros de nuestro catálogo Halloween.",
     image: "assets/img/letreros.jpg",
     imageAlt: "Letrero tipográfico 3D de escritorio de dos colores Spooky Season",
@@ -54,7 +54,7 @@ window.CATALOG_CATEGORIES = [
     name: "Muñecos y Figuras",
     icon: "smart_toy",
     shortDescription:
-      "Articulados flexi y miniaturas de alta resolución impresas en una sola tirada sin soporte destructivo.",
+      "Esqueletos con mejor postura que la tuya (y sin ir al gym).",
     pageDescription: "Explora los modelos 3D de muñecos y figuras de nuestro catálogo Halloween.",
     image: "assets/img/figuras.jpg",
     imageAlt: "Figura articulada impresa en 3D esqueleto estilizado con detalles naranja",
@@ -68,7 +68,7 @@ window.CATALOG_CATEGORIES = [
     name: "Adornos",
     icon: "diamond",
     shortDescription:
-      "Colgantes geométricos, murciélagos y filigranas festivas en PLA negro mate con acentos translúcidos.",
+      "El toque necesario para un lugar embrujado de verdad.",
     pageDescription: "Explora los modelos 3D de adornos de nuestro catálogo Halloween.",
     image: "assets/img/adornos.jpg",
     imageAlt: "Modern geometric 3D printed Halloween decorative ornaments",
@@ -81,7 +81,7 @@ window.CATALOG_CATEGORIES = [
     name: "Souvenirs",
     icon: "card_giftcard",
     shortDescription:
-      "Llaveros, fichas de bolsillo y recuerdos temáticos con co-extrusión bicolor de alta precisión.",
+      "Un pedazo de Halloween para llevar a donde sea.",
     pageDescription: "Explora los modelos 3D de souvenirs de nuestro catálogo Halloween.",
     image: "assets/img/souvenirs.jpg",
     imageAlt: "Sleek 3D printed Halloween souvenirs and keychains",
@@ -94,7 +94,7 @@ window.CATALOG_CATEGORIES = [
     name: "Otros",
     icon: "grid_view",
     shortDescription:
-      "Contenedores de dulces, cuencos articulados y rarezas de fabricación aditiva para ambientación.",
+      "Lo raro, lo curioso y lo que no cabe en ninguna categoría.",
     pageDescription: "Explora otros modelos 3D de nuestro catálogo Halloween.",
     image: "assets/img/otros.jpg",
     imageAlt: "Creative miscellaneous 3D printed Halloween oddities",
