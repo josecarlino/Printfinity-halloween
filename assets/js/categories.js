@@ -12,7 +12,7 @@ window.CATALOG_CATEGORIES = [
   {
     slug: "fantasmas",
     name: "Fantasmas",
-    icon: "mode_night",
+    icon: "nights_stay",
     shortDescription:
       "Fantasmas tan blancos que asustan... de tiernos que son.",
     pageDescription: "Explora los modelos 3D de fantasmas de nuestro catálogo Halloween.",
@@ -39,7 +39,7 @@ window.CATALOG_CATEGORIES = [
   {
     slug: "letreros",
     name: "Letreros",
-    icon: "spellcheck",
+    icon: "signpost",
     shortDescription:
       "Para anunciar el terror con estilo (y buena ortografía).",
     pageDescription: "Explora los modelos 3D de letreros de nuestro catálogo Halloween.",
@@ -52,7 +52,7 @@ window.CATALOG_CATEGORIES = [
   {
     slug: "figuras",
     name: "Muñecos y Figuras",
-    icon: "smart_toy",
+    icon: "skull",
     shortDescription:
       "Esqueletos con mejor postura que la tuya (y sin ir al gym).",
     pageDescription: "Explora los modelos 3D de muñecos y figuras de nuestro catálogo Halloween.",
@@ -66,7 +66,7 @@ window.CATALOG_CATEGORIES = [
   {
     slug: "adornos",
     name: "Adornos",
-    icon: "diamond",
+    icon: "celebration",
     shortDescription:
       "El toque necesario para un lugar embrujado de verdad.",
     pageDescription: "Explora los modelos 3D de adornos de nuestro catálogo Halloween.",
@@ -92,7 +92,7 @@ window.CATALOG_CATEGORIES = [
   {
     slug: "otros",
     name: "Otros",
-    icon: "grid_view",
+    icon: "widgets",
     shortDescription:
       "Lo raro, lo curioso y lo que no cabe en ninguna categoría.",
     pageDescription: "Explora otros modelos 3D de nuestro catálogo Halloween.",
