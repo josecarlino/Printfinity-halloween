@@ -13,6 +13,15 @@ window.CATALOG_CATEGORIES = [
     slug: "fantasmas",
     name: "Fantasmas",
     icon: "nights_stay",
+    // Material Symbols no tiene un ícono de fantasma real, así que se usa este SVG a medida
+    // (mismo trazo/color naranja que el resto de íconos) en vez de "icon" para esta categoría.
+    iconSvg:
+      "<svg width='22' height='22' viewBox='0 0 24 24' fill='currentColor' xmlns='http://www.w3.org/2000/svg'>" +
+      "<path d='M12,3 C7.58,3 4,6.58 4,11 L4,19.2 C4,20.15 5.11,20.67 5.84,20.06 L7.2,18.93 C7.66,18.55 8.32,18.55 8.78,18.93 L10.11,20.04 C10.62,20.46 11.35,20.46 11.86,20.04 L13.19,18.93 C13.65,18.55 14.31,18.55 14.77,18.93 L16.1,20.04 C16.61,20.46 17.34,20.46 17.85,20.04 L18.16,19.78 C18.68,19.35 19,18.71 19,18.03 L19,11 C19,6.58 15.42,3 12,3 Z'/>" +
+      "<circle cx='9.2' cy='10.8' r='1.3' fill='#1B1B1E'/>" +
+      "<circle cx='14.8' cy='10.8' r='1.3' fill='#1B1B1E'/>" +
+      "<ellipse cx='12' cy='14.6' rx='1.6' ry='1.2' fill='#1B1B1E'/>" +
+      "</svg>",
     shortDescription:
       "Fantasmas tan blancos que asustan... de tiernos que son.",
     pageDescription: "Explora los modelos 3D de fantasmas de nuestro catálogo Halloween.",

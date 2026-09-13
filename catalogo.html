@@ -177,7 +177,7 @@
       return (
         '<a class="p-space-sm rounded-lg bg-surface-card border border-border-subtle hover:border-pumpkin-vibrant/50 hover:bg-surface-subtle transition-all flex flex-col items-center text-center gap-2 group no-underline" href="catalogo.html?cat=' + c.slug + '">' +
           '<div class="w-10 h-10 rounded-lg bg-surface-subtle group-hover:bg-pumpkin-vibrant/10 text-pumpkin-vibrant flex items-center justify-center transition-colors">' +
-            '<span class="material-symbols-outlined text-[22px]">' + c.icon + '</span>' +
+            (c.iconSvg || '<span class="material-symbols-outlined text-[22px]">' + c.icon + '</span>') +
           '</div>' +
           '<span class="font-label-sm text-text-primary group-hover:text-pumpkin-vibrant font-medium truncate w-full">' + c.name + '</span>' +
         '</a>'
