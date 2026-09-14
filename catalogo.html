@@ -65,7 +65,7 @@
     <div class="w-full flex flex-col items-center">
       <div id="embed-wrapper" class="w-full"></div>
 
-      <div class="w-full mt-space-xl pt-space-lg border-t border-border-subtle flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+      <div class="w-full mt-space-xl pt-space-xl border-t border-border-subtle flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
         <div class="flex flex-col gap-1 min-w-0">
           <h2 class="font-headline-sm text-headline-sm font-bold text-text-primary">¿Te interesa algún modelo?</h2>
           <p class="font-body-md text-body-md text-text-secondary">
@@ -128,7 +128,7 @@
     document.getElementById("cat-description").textContent = current.pageDescription;
 
     const waNumber = ((window.SITE_CONFIG || {}).whatsappNumber || "").replace(/\D/g, "");
-    const waMessage = 'Hola, quiero cotizar un modelo de la categoría "' + current.name + '". Número de modelo: ';
+    const waMessage = 'Hola, quiero cotizar un modelo de la categoría "' + current.name + '"';
     document.getElementById("whatsapp-cta").href = "https://wa.me/" + waNumber + "?text=" + encodeURIComponent(waMessage);
 
     // Contenedor 16:9 compartido por el embed real y el estado "próximamente",
