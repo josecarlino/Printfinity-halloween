@@ -51,9 +51,9 @@ window.CATALOG_CATEGORIES = [
     pageDescription: "Explora los modelos 3D de calabazas de nuestro catálogo Halloween.",
     image: "assets/img/calabazas.jpg",
     imageAlt: "Lámpara jack-o-lantern moderna geométrica en capas de filamento negro y naranja",
-    embedUrl: "https://www.canva.com/design/DAGy5aEcmes/QhkRveWCkexktZLlIkSK6Q/view?embed",
+    embedUrl: "https://www.canva.com/design/DAHVI_mnZI0/qD_A3z8Dgk-eCf8GISdF2w/view?embed",
     canvaLink:
-      "https://www.canva.com/design/DAGy5aEcmes/QhkRveWCkexktZLlIkSK6Q/view?utm_content=DAGy5aEcmes&utm_campaign=designshare&utm_medium=embeds&utm_source=link",
+      "https://www.canva.com/design/DAHVI_mnZI0/qD_A3z8Dgk-eCf8GISdF2w/view?utm_content=DAHVI_mnZI0&utm_campaign=designshare&utm_medium=embeds&utm_source=link",
     author: "José Carlos Lino"
   },
   {
