@@ -28,9 +28,10 @@ window.CATALOG_CATEGORIES = [
     pageDescription: "Explora los modelos 3D de fantasmas de nuestro catálogo Halloween.",
     image: "assets/img/fantasmas.jpg",
     imageAlt: "Esculturas de fantasmas low-poly impresas en 3D con luz tenue de fondo",
-    embedUrl: null,
-    canvaLink: null,
-    author: null
+    embedUrl: "https://www.canva.com/design/DAHVJKFs3NM/NfnaQxDxKpxvd73U-TF4Lw/view?embed",
+    canvaLink:
+      "https://www.canva.com/design/DAHVJKFs3NM/NfnaQxDxKpxvd73U-TF4Lw/view?utm_content=DAHVJKFs3NM&utm_campaign=designshare&utm_medium=embeds&utm_source=link",
+    author: "José Carlos Lino"
   },
   {
     slug: "calabazas",
